@@ -12,9 +12,9 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
+  
     private void MovePlayer(Vector2 direction) {
         Vector3 moveDirection = new(direction.x, 0f, direction.y);
-        rb.AddForce(speed * moveDirection);
+        rb.AddForce(speed * moveDirection, ForceMode.VelocityChange);
     }
 }
