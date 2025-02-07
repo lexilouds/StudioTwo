@@ -6,8 +6,8 @@ public class Gutter : MonoBehaviour
         Rigidbody ballRigidBody = triggeredBody.GetComponent<Rigidbody>();
         float velocityMagnitude = ballRigidBody.linearVelocity.magnitude;
 
-        ballRigidBody.linearVelocity = Vector3.zero;
-        ballRigidBody.angularVelocity = Vector3.zero;
+        //ballRigidBody.linearVelocity = Vector3.zero;
+        //xballRigidBody.angularVelocity = Vector3.zero;
 
         ballRigidBody.AddForce(transform.forward * velocityMagnitude, ForceMode.VelocityChange);
    }
