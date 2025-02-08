@@ -22,7 +22,7 @@ public class BallController : MonoBehaviour
     {
         if (isBallLaunched) return;
         isBallLaunched = true;
-
+        ballRB.isKinematic = false;
         // ballRB.AddForce(transform.forward * force, ForceMode.Impulse);
         transform.parent = null;
         ballRB.isKinematic = false;
