@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 160384303}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,8 +494,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09735498, y: 0.00000003316173, z: -0.000000003243869, w: 0.99524975}
-  m_LocalPosition: {x: 0.7, y: 1.648704, z: -43.554092}
+  m_LocalRotation: {x: 0.17120545, y: -1.377156e-15, z: 2.3930992e-16, w: 0.9852354}
+  m_LocalPosition: {x: 0.7, y: 4.306551, z: -43.915882}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -993,8 +993,8 @@ GameObject:
   - component: {fileID: 438850082}
   - component: {fileID: 438850081}
   m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,7 +1198,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
+  TargetOffset: {x: 0, y: 2, z: 0}
   Damping: {x: 0.5, y: 0.5}
   Lookahead:
     Enabled: 0
@@ -1249,7 +1249,7 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 0
+    Value: 26
     Center: 0
     Range: {x: -10, y: 45}
     Wrap: 0
@@ -1319,13 +1319,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631013901}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09735498, y: 0.00000003316173, z: -0.0000000032438692, w: 0.99524975}
-  m_LocalPosition: {x: 0.7, y: 1.648704, z: -43.554092}
+  m_LocalRotation: {x: 0.17120543, y: -1.3781165e-15, z: 2.4483741e-16, w: 0.9852354}
+  m_LocalPosition: {x: 0.7, y: 4.306551, z: -43.915882}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -22.366, y: -1, z: 0}
 --- !u!4 &642043605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4711488591064596988, guid: 9a3b6d8aebe5f453187f1cdc261e784e, type: 3}

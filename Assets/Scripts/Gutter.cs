@@ -1,15 +1,18 @@
 using UnityEngine;
-using System;
 
 public class Gutter : MonoBehaviour
 {
-   private void OnTriggerEnter(Collider triggeredBody) {
-        Rigidbody ballRigidBody = triggeredBody.GetComponent<Rigidbody>();
-        float velocityMagnitude = ballRigidBody.linearVelocity.magnitude;
+   private void OnTriggerEnter(Collider triggeredBody)
+   {
+      if (triggeredBody.CompareTag("Ball"))
+      {
+         Rigidbody ballRigidBody = triggeredBody.GetComponent<Rigidbody>();
+         float velocityMagnitude = ballRigidBody.linearVelocity.magnitude;
 
-        ballRigidBody.linearVelocity = Vector3.zero;
-        ballRigidBody.angularVelocity = Vector3.zero;
+         ballRigidBody.linearVelocity = Vector3.zero;
+         ballRigidBody.angularVelocity = Vector3.zero;
 
-        ballRigidBody.AddForce(transform.forward * velocityMagnitude, ForceMode.VelocityChange);
+         ballRigidBody.AddForce(transform.forward * velocityMagnitude, ForceMode.VelocityChange);
+      }
    }
 }
